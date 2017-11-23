@@ -2,7 +2,7 @@ import { INCREMENT, DECREMENT } from '../constants/actionTypes';
 
 const INITIAL_STATE = { count: 0 };
 
-export default (state = INITIAL_STATE, actions) => {
+function CountReducer(state = INITIAL_STATE, actions) {
     switch (actions.type) {
         case INCREMENT:
             return {
@@ -18,4 +18,6 @@ export default (state = INITIAL_STATE, actions) => {
             };
         }
     }
-};
+}
+
+export default CountReducer;

@@ -1,15 +1,15 @@
 import { INCREMENT, DECREMENT } from '../constants/actionTypes';
 
-function incFunc() {
+function increment() {
     return {
         type: INCREMENT
     };
 }
 
-function decFunc() {
+function decrement() {
     return {
         type: DECREMENT
     };
 }
 
-export { incFunc, decFunc };
+export { increment, decrement };

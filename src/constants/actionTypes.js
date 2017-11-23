@@ -1,4 +1,4 @@
-const INCREMENT = 'increase';
-const DECREMENT = 'decrease';
+const INCREMENT = 'INCREMENT';
+const DECREMENT = 'DECREMENT';
 
 export { INCREMENT, DECREMENT };
