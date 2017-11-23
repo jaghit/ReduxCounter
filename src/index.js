@@ -11,12 +11,16 @@ class Counter extends Component {
                 <View style={styles.counterView}>
                     <Text style={styles.counterText}>{this.props.CountReducer.count}</Text>
                 </View>
-                <View style={styles.buttonView}>
-                    <TouchableHighlight onPress={() => { this.props.increment() }}>
-                        <Text style={styles.buttonText}>+</Text>
+                <View style={styles.buttonContainer}>
+                    <TouchableHighlight onPress={() => { this.props.increment() }} underlayColor='rgba(0, 256, 0, 0.1)'>
+                        <View style={[styles.buttonView, { backgroundColor: 'rgba(0, 256, 0, 0.5)' }]}>
+                            <Text style={styles.buttonText}>+</Text>
+                        </View>
                     </TouchableHighlight>
-                    <TouchableHighlight onPress={() => { this.props.decrement() }}>
-                        <Text style={styles.buttonText}>-</Text>
+                    <TouchableHighlight onPress={() => { this.props.decrement() }} underlayColor='rgba(256, 0, 0, 0.1)'>
+                        <View style={[styles.buttonView, { backgroundColor: 'rgba(256, 0, 0, 0.5)' }]}>
+                            <Text style={styles.buttonText}>-</Text>
+                        </View>
                     </TouchableHighlight>
                 </View>
             </View>

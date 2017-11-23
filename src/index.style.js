@@ -10,20 +10,21 @@ const styles = StyleSheet.create({
 
     },
     counterText: {
-        fontSize: 64
+        fontSize: 128
     },
-    buttonView: {
+    buttonContainer: {
         flexDirection: 'row'
     },
-    buttonText: {
-        borderColor: 'gray',
-        borderWidth: 1,
-        fontFamily: 'monospace',
-        fontSize: 32,
-        height: 46,
+    buttonView: {
+        alignItems: 'center',
+        height: 64,
+        justifyContent: 'center',
         margin: 8,
-        textAlign: 'center',
-        width: 46
+        width: 64
+    },
+    buttonText: {
+        fontFamily: 'monospace',
+        fontSize: 32
     }
 });
 
