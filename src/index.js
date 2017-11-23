@@ -9,7 +9,7 @@ class Counter extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.counterView}>
-                    <Text style={styles.counterText}>{this.props.count}</Text>
+                    <Text style={styles.counterText}>{this.props.CountReducer.count}</Text>
                 </View>
                 <View style={styles.buttonView}>
                     <TouchableHighlight onPress={() => { this.props.increment() }}>

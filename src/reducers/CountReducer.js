@@ -6,11 +6,11 @@ function CountReducer(state = INITIAL_STATE, actions) {
     switch (actions.type) {
         case INCREMENT:
             return {
-                ...state, count: count + 1
+                ...state, count: state.count + 1
             };
         case DECREMENT:
             return {
-                ...state, count: count - 1
+                ...state, count: state.count - 1
             };
         default: {
             return {
