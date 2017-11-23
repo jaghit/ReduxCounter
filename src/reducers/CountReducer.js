@@ -1,8 +1,8 @@
 import { INCREMENT, DECREMENT } from '../constants/actionTypes';
 
-const INITIAL_STORE = { count: 0 };
+const INITIAL_STATE = { count: 0 };
 
-export default (state = INITIAL_STORE, actions) => {
+export default (state = INITIAL_STATE, actions) => {
     switch (actions.type) {
         case INCREMENT:
             return {

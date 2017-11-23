@@ -3,6 +3,6 @@ import rootReducer from '../../reducers';
 
 const createRNReduxStore = applyMiddleware()(createStore);
 
-const store = createRNReduxStore(rootReducer);
+const createStore = createRNReduxStore(rootReducer);
 
-export default store;
+export default createStore;
