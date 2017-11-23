@@ -6,16 +6,16 @@ export default (state = INITIAL_STORE, actions) => {
     switch (actions.type) {
         case INCREMENT:
             return {
-                ...state, count = count + 1
+                ...state, count: count + 1
             };
         case DECREMENT:
             return {
-                ...state, count = count - 1
+                ...state, count: count - 1
             };
         default: {
             return {
                 ...state
-            }
+            };
         }
     }
 };

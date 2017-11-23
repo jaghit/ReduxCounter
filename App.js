@@ -12,6 +12,8 @@ import {
     View
 } from 'react-native';
 import Counter from './src';
+import { Provider } from 'react-redux';
+import store from './src/store/createStore';
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
@@ -23,7 +25,9 @@ const instructions = Platform.select({
 export default class App extends Component<{}> {
     render() {
         return (
-            <Counter />
+            <Provider store={store}>
+                <Counter />
+            </Provider>
         );
     }
 }
